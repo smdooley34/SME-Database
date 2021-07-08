@@ -61,5 +61,11 @@ cd /
 mkdir Scratch && cd Scratch
 
 # Clone The Repository
-git clone https://github.com/smdooley34/SME-Database.git 
+git clone https://github.com/smdooley34/SME-Database.git
+
+# Run The Streamlit App By Running:
+cd SME-Database/src/
+streamlit run main.py
 ```
+
+You may need to install the streamlit dependency so check the Streamlit website for more setup instructions if needed.
