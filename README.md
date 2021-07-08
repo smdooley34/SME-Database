@@ -25,22 +25,34 @@ resulting display of relevant data based on that input. I will also still need t
 getting real live data back from some sort of internet endpoint. I'm not sure if I'll have enough time to carry the
 project all the way through the way I had originally conceived, with all of this considered.
 
-### Some Potential Milestones & Self Reflection
-* Hook Up User Input To Results
-* Bring In Live Data From An Endpoint Rather Than Mock Data
-* Improve The General GUI
+## Project Update (July 7th, 2021)
 
-As I stated above, while I am unsure if I will be able to carry the project all the way through completion the way I
-originally wanted to, I am altogether pleased. I've learned quite a bit about Python in general so far and am
-starting to understand how to read APIs and libraries to incorporate them into my own programs.
+### Self Assessment
+For the last several weeks, I've been going over the feedback I received and decided to switch up the platform for the
+SME application from the way I originally conceived it. I'll be using, based on an in-class suggestion, to use
+Streamlit. While it has been a struggle learning both the ins-and-outs of Python and Streamlit, I believe I'm making
+decent progress, especially after moving away from the far simpler Tkinter.
 
-![img.png](screenshots/screen_one.png)
+### Major Updates
+* Moving to Streamlit
+* Adding more extensive mock data with more planned
+* Making the application be a multi-page web app for flexibility
+
+### Next Steps
+* Flesh out the entire application, as broad as that is. I'd like to have each page of the application link to different
+  parts of the app
+* Implement missing features such as an actually functional search feature (shouldn't actually be hard, I think)
+* Think of more features and pages to add to the application as a whole to make the whole thing seem useful and coherent
+
+I don't believe I'll need any particular help yet:)
+
+![img.png](screenshots/screen_two.png)
 
 ## IDE/Project Setup
 I'll be using JetBrains' [PyCharm](https://www.jetbrains.com/pycharm/) Community Edition to develop code for this
 project. I will of course be utilizing [Git](https://git-scm.com) and [GitHub](https://github.com/) for version control.
 
-You will also need a [Python](https://www.python.org/) interpreter. I will be using the latest version (3.9.5 as of
+You will also need a [Python](https://www.python.org/) interpreter. I will be using the latest version (3.9.6 as of
 this writing). Now, from your command line:
 
 ```bash
@@ -51,8 +63,3 @@ mkdir Scratch && cd Scratch
 # Clone The Repository
 git clone https://github.com/smdooley34/SME-Database.git 
 ```
-
-## Project Architecture
-As of now, I'm thinking of making this a very simple query page that allows a user to search, in various ways and by
-various attributes, SMEs. The app displays a window GUI using Python's builtin
-[Tkinter](https://docs.python.org/3/library/tkinter.html) interface.
