@@ -1,0 +1,15 @@
+{
+    "version": "0.1.0",
+    "configurations": [ 
+        {
+            "name": "debug streamlit",
+            "type": "python",
+            "request": "launch",
+            "program": "C:\\Users\\charding\\Anaconda3\\Scripts\\streamlit.exe",  // the steamlit executable
+            "args": [
+                "run",   // fires off streamlit's run mode
+                "main.py"  // the python file to run
+            ]
+        }
+    ]
+    }
