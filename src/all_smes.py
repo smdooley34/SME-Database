@@ -7,7 +7,7 @@ def page_body():
     """
     st.header("All SMEs")
 
-    subject_matter_experts = json.load(open('mocks/subject_matter_experts.json'))
+    subject_matter_experts = json.load(open('../src/mocks/subject_matter_experts.json'))
 
     for subject_matter_expert in subject_matter_experts:
       beta_expander_title = subject_matter_expert['name'] + ' - ' + str(subject_matter_expert['age']) + ' years old'
