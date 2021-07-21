@@ -6,9 +6,7 @@
     Helpful Way.
   </h4>
 
-  <p>
-    [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_bade_black_white.svg)](https://share.streamlit.io/smdooley34/sme-database/main/src/main.py)
-  </p>
+  [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/smdooley34/sme-database/main/src/main.py)
 </div>
 
 ## Summary
