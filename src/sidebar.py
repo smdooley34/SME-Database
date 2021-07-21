@@ -1,3 +1,4 @@
+from enum import Enum
 import streamlit as st
 
 import all_smes
@@ -7,6 +8,9 @@ ApplicationPages = {
     "All SMEs": all_smes,
     "Search": search
 }
+
+class DatabaseCollections(Enum):
+  ALL_SMES = "subject_matter_experts"
 
 def sme_sidebar():
     """

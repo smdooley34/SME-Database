@@ -2,17 +2,50 @@
   <h1>SME Database</h1>
 
   <h4>
-    HCI 584X Project About Creating A Python Application To Allow A User To See Subject Matter Experts (SMEs) In A
+    HCI 584X Project About Creating A Python Application To Allow A User To See Subject-Matter-Experts (SMEs) In A
     Helpful Way.
   </h4>
 </div>
 
 ## Summary
-This project is certainly a work-in-progress in concept, but my vision for it is to serve as a visualization tool of
-sorts for finding SMEs in various fields or subject matters. I suppose for now the "data" pertaining to each SME will be
-considered mock data, but I am also imagining that this will eventually come from an external database endpoint of some
-kind. What I mean by this is take, for example, if Wikipedia was your "database" of people, then we could create our own
-database from such an external database.
+This project is about creating a prototype website where academics, professionals, and any other interested users can
+discover and search for Subject-Matter-Experts (SMEs) in a helpful and intuitive way. While the fully realized idea
+would be to create a comprehensive website that displays a large amount of data in a myriad of different ways, the
+prototype concerns getting base functionality working. Hopefully, this would be done in a way that scales well and
+allows for the end-goal ideas to be implemented in a relatively straightforward manner.
+
+## Project URLs
+* SME Database (Hosted On Streamlit Sharing) - https://share.streamlit.io/smdooley34/sme-database/main/src/main.py
+* SME Database (GitHub) - https://github.com/smdooley34/SME-Database - You're Here!
+* Firestore Database (Must Be Signed In) - https://console.firebase.google.com/u/1/project/sme-database-65c6d
+
+## Architecture
+There are a few parts to this project. First and foremost is the usage of the Streamlit Python web development
+framework as a frontend. While not as comprehensive as some frameworks, Streamlit's goal is to enable simple apps with
+little code. The idea of Streamlit is to turn data scripts into rendered units.
+
+The application is hosted on the cloud via [Streamlit Sharing](https://streamlit.io/sharing). The gist of this
+functionality is that Streamlit looks for a configured repository and loads the set application entrypoint file, in this
+case `main.py`.
+
+Here is a screenshot of the projects' Cloud Firestore:
+![img.png](screenshots/screen_three.png)
+As you can see, there is a nice GUI which allows one to create or otherwise import data. This database can be accessed
+based on a private key that is included in the projects source code for easier code. I struggled to get
+[Streamlit Secrets](https://blog.streamlit.io/secrets-in-sharing-apps/) to work properly for some reason. However, if
+this were in a "production" environment, we would certainly not want to be handing out the private key to the database
+to everyone.
+
+In Firestore, you can see that one can create collections and documents. As their names suggest, collections are sets
+of documents and documents can be thought of as generic "objects" in a collection. The documents contain the actual
+fields and data pertaining to a database entry. This can be queried and otherwise interacted with quite easily with
+Google's Python APIs.
+
+The frontend site talks to a backend database that is hosted on the cloud via [Google Firebase](https://firebase.google.com).
+On Firebase, I created a Google Firestore database that holds mock data for the application. This is connected to my
+personal Gmail account (from which I will include screenshots to show how it works). Firestore is then configured in the
+frontend code to talk to this Firestore database. Firestore supports various query operations and also has first-class
+support for Streamlit, making development easier.
 
 ## Project Update (June 21st, 2021)
 For the last several times I've worked on this project, I've been going over in my head how best to proceed with a
