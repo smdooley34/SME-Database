@@ -5,6 +5,10 @@
     HCI 584X Project About Creating A Python Application To Allow A User To See Subject-Matter-Experts (SMEs) In A
     Helpful Way.
   </h4>
+
+  <p>
+    [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_bade_black_white.svg)](https://share.streamlit.io/smdooley34/sme-database/main/src/main.py)
+  </p>
 </div>
 
 ## Summary
